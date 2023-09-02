@@ -18,3 +18,24 @@ export const CardBox = styled.div`
     padding: 0 1.5em;
   }
 `;
+
+export const SongBox = styled.div`
+  border: 1px solid black;
+  border-radius: 15px;
+`;
+
+export const SongTitle = styled.div`
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+`;
+
+export const InfinityBox = styled.div`
+  border: 5px solid black;
+  font-size: 1.5em;
+  font-weight: thin;
+  letter-spacing: normal;
+  width: 100%;
+  height: 47%;
+  overflow-y: scroll;
+`;

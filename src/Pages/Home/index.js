@@ -5,11 +5,12 @@ import { ShiftCard, Loading, Error, Title } from "@components";
 import { convertTodaysData } from "@utils";
 
 import { fetchData } from "./api";
-import { Container, CardBox } from "./styled";
+import { Container, CardBox, SongTitle, SongBox, InfinityBox } from "./styled";
 
 const Home = () => {
   const [todaysData, setTodaysData] = useState([]);
   const { data, isError, isLoading } = useQuery("today", fetchData);
+  const text = "We turn zeros into ones ";
 
   useEffect(() => {
     if (data) {
@@ -32,20 +33,17 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: .25 }}
     >
-      <Title>Today's Shift</Title>
-      <CardBox>
-        {todaysData.map((shift) => {
-          return (
-            <ShiftCard
-              key={shift.title}
-              title={shift.title}
-              time={shift.time} 
-              signedUp={shift.signedUp} 
-              comments={shift.comments} 
-            />
-          )
-        })}
-      </CardBox>
+      <Title>DISCOGRAPHY</Title>
+      <SongBox>
+        <SongTitle>0/1/21 - walshy-jamestyberius7.mp3</SongTitle>
+        <SongTitle>0/2/21 - Walsh'sOcean.mp3</SongTitle>
+        <SongTitle>0/3/21 - thinkinboutyou.mp3</SongTitle>
+        <SongTitle>0/4/21 - experiment.mp3</SongTitle>
+        <SongTitle>0/5/21 - dreamstate2.mp3</SongTitle>
+      </SongBox>
+      <InfinityBox>
+        {text.repeat(1500)}
+      </InfinityBox>
     </Container>
   );
 };

@@ -8,6 +8,7 @@ import {
   Container,
   PageContainer,
   Title,
+  AltColor
 } from "./styled";
 
 const queryClient = new QueryClient();
@@ -16,11 +17,11 @@ const App = () => {
   
   return (
     <Container client={queryClient}>
-      <Title>Project CCJS</Title>
+      <Title>OPPABLACK <AltColor>/</AltColor>/ <AltColor>JAMESMAYBE</AltColor></Title>
       <PageContainer>
         <Router>
           <AnimatedRoutes />
-          <NavBar />
+          {/* <NavBar /> */}
         </Router>
       </PageContainer>
     </Container>

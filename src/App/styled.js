@@ -14,20 +14,37 @@ export const Container = styled(QueryClientProvider)`
 
 export const PageContainer = styled.div`
   width: 100%;
-  height: 75%;
+  height: 91%;
   text-align: center;
-  overflow-y: auto;
+  overflow-y: hidden;
 `;
 
 export const Title = styled.h1`
-  height: 9%;
-  font-size: 3em;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-size: 6.4em;
+  font-weight: 900;
   text-align: center;
+  letter-spacing: -6px;
   color: #613898;
   margin: 0;
 
+  @media (max-width: 1024px) {
+    font-size: 3.7em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
+
   @media (max-width: 425px) {
-    font-size: 2em;
+    font-size: 1.5em;
     height: 6%;
   }
 `;
+
+export const AltColor = styled.span`
+  color: black;
+
+`
