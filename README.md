@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Project CCJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A project to visualize data from the CCJS group.
 
-## Available Scripts
+## Future Upgrades
 
-In the project directory, you can run:
+- [ ] Can get to next page by swiping right on phone.
 
-### `npm start`
+- [ ] Create a dark mode version of website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ ] Parse the data more to get Fun Facts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [ ] Change Historical to a calendar.
 
-### `npm test`
+- [ ] Site modern redesign.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] Rough Design for Fun Facts page
+- Header that you can click arrows on either side that control the timeframe shown on page
+  - Alltime, this year, last year, this month, this week, etc
+  - A bunch of stats throughout the page that update depending on the shown timeframe
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Debt
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] Custom edit prettier to my preference.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Configure autoformat on Save on my VS code.
 
-### `npm run eject`
+- [ ] Update the navicon.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [ ] "Freeze" first row of table.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Recently Done
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [x] Map ShiftCard components into Homepage and add a key. 7/7/23
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [x] Add error checking into my data calls. 7/7/23
 
-## Learn More
+- [x] Add a loading spinner OR skeleton while pages loading. 7/6/23
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [x] Look into caching data. 7/5/23
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] Historical page needs to properly handle user manipulating search query. 7/3/23
 
-### Code Splitting
+- [x] Seperate the Homepage code into components. 7/3/23
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [x] Can load the Historical data page from the start date in the URL. 7/2/23
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [x] Reformat Historical page to have a dynamic table again. 7/2/23
